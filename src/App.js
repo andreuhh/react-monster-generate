@@ -9,7 +9,7 @@ class App extends Component {
 
     this.state = {
       monsters: [],
-      searchField: ''
+      searchField: '',
     };
     // .bind() è Necessario per accedere al corretto valore di `this` all'interno della callback
     //this.handleChange = this.handleChange.bind(this);
@@ -22,7 +22,9 @@ class App extends Component {
   }
 
   handleChange = e => {
-    this.setState({ searchField: e.target.value })
+    this.setState({
+      searchField: e.target.value,
+    })
   }
 
   render() {
